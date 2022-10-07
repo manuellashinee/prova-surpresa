@@ -44,17 +44,17 @@ const [ final, setFinal] = useState();
 
           <div>
             <p>Qtd.Media:</p>
-            <input type='number' value={qtdMed}  onChange={e => setQtdMed(Number(e.target.value))}/>
+            <input className='inserir' type='number' value={qtdMed}  onChange={e => setQtdMed(Number(e.target.value))}/>
           </div>
 
           <div>
             <p>Qtd.Grande:</p>
-            <input type='number' value={qtdGra}  onChange={e => setQtdGra(Number(e.target.value))} />
+            <input className='inserir' type='number' value={qtdGra}  onChange={e => setQtdGra(Number(e.target.value))} />
           </div>
 
           <div>
             <p>Desconto:</p>
-            <input type='number' value={desc}  onChange={e => setDesc(Number(e.target.value))}/>
+            <input className='inserir' type='number' value={desc}  onChange={e => setDesc(Number(e.target.value))}/>
           </div>
 
           <div>
