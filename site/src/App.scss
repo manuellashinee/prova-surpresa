@@ -1,0 +1,31 @@
+.App {
+
+    .titulo{
+        font-family: 'sans-serif';
+    }
+
+    .alinhamento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    }
+
+    .quadro {
+        padding: 2em;
+    display: flex;
+    flex-direction: column;
+    opacity: 76%;
+    background-color: purple;
+    width: 50%;
+    border-radius: 1em;
+
+    }
+
+    .inserir {
+        border: none;
+        width: 25em;
+        height: 2em;
+    }
+}
