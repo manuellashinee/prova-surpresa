@@ -9,6 +9,9 @@ export default function Home() {
             <Link to='/exer1'>FUNÇÃO 1</Link>
             <Link to='/exer2'>FUNÇÃO 2</Link>
             <Link to='/exer3'>FUNÇÃO 3</Link>
+            <Link to='/exer4'>FUNÇÃO 4</Link>
+            <Link to='/exer6'>FUNÇÃO 6</Link>
+
             </div>
         </section>
     );
