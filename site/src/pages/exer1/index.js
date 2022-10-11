@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './index.scss'
+import '../../common/common.scss'
 
 
 export default function Sorvete() {
@@ -28,7 +29,7 @@ const [ final, setFinal] = useState();
   return (
    
 
-        <section>
+        <section className='container-ex1'>
           <div className='titulo'>
             <h1>Preços do Açaí</h1>
           </div>
@@ -57,10 +58,16 @@ const [ final, setFinal] = useState();
           </div>
 
           <div>
-            <h2>O valor total é: </h2>
-          <button onClick={custo}>Calcular</button>
+            <div className='rodape'>
+            <div><h2>O valor total é: </h2></div>
+            <div className='resul'>{final}</div>
 
-          {final}
+            </div>
+          
+            
+          <button className='save-button' onClick={custo}>Calcular</button>
+
+          
 
           </div>
     </div>

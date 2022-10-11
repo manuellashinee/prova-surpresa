@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import './index.scss'
 
 export default function Signos(){
     const [mes, setMes] = useState("");
@@ -21,15 +22,26 @@ export default function Signos(){
     },[mes,dia])
 
     return (
-        <section>
+        <section className='Lana'>
             <h1>SIGNO LIBRA</h1>
-            <p>MÊS</p>
-            <input type='text' value={mes} onChange={e=>setMes(e.target.value)}/>
-            <p>DIA</p>
-            <input type='number' value={dia} onChange={e=>setDia(e.target.value)}/>
-            <br/>
-            <hr/>
-            <span> VOCÊ É DE LIBRA? {resul? "Sim" : "Não"}</span>
+
+            <div className='align'>
+                <div className='squad'>
+
+                    <div>
+                        <p>MÊS</p>
+                        <input type='text' value={mes} onChange={e=>setMes(e.target.value)}/>
+                    </div>
+                    <div>
+                        <p>DIA</p>
+                        <input type='number' value={dia} onChange={e=>setDia(e.target.value)}/>
+                    </div>
+                    <div><span> VOCÊ É DE LIBRA? {resul? "Sim" : "Não"}</span></div>
+               </div>
+            </div>
+            
+           
+           
         </section>
     );
 }

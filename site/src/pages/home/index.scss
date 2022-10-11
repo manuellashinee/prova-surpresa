@@ -47,17 +47,28 @@
     font-family:'Bold';
     font-size: 1em;
     background-color: #AE4EDB;
-    color: white;
+    
     border-radius: 10px;
     margin-bottom: 1em;
     width: 7em;
     height: 2.5em;
     border: none;
+}
+.o {
     text-decoration: none;    
+    color: white;
+}
+
+Link {
+    text-decoration: none;
+}
+
+.o:hover {
+    color: #000;
+    transition: 0.2s;
 }
 
 .salvar-botao:hover {
-    color:#AE4EDB;
     background-color: white;
     cursor: pointer;
     transition: 0.2s;

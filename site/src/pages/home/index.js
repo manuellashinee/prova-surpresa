@@ -22,23 +22,23 @@ export default function Home() {
             <div className='principal'>
                 <div className='harry'>
                     <div className='primeira'>
-                        <button className='salvar-botao'><Link className='texto' to='/exer1'>FUNÇÃO 1</Link></button>
+                        <button className='salvar-botao'><Link className='texto' to='/exer1'><p className='o'>FUNÇÃO 1</p></Link></button>
                     </div>
 
                     <div className='primeira'>
-                        <button className='salvar-botao'><Link className='texto' to='/exer2'>FUNÇÃO 2</Link></button>
+                        <button className='salvar-botao'><Link className='texto' to='/exer2'><p className='o'>FUNÇÃO 2</p></Link></button>
                     </div>
                     <div className='primeira'>
-                        <button className='salvar-botao'><Link className='texto' to='/exer3'><p>FUNÇÃO 3</p></Link></button>
+                        <button className='salvar-botao'><Link className='texto' to='/exer3'><p className='o'>FUNÇÃO 3</p></Link></button>
                     </div>
                     <div className='primeira'>
-                        <button className='salvar-botao'><Link className='texto' to='/exer4'>FUNÇÃO 4</Link></button>
+                        <button className='salvar-botao'><Link className='texto' to='/exer4'><p className='o'>FUNÇÃO 4</p></Link></button>
                     </div>
                     <div className='primeira'>
-                        <button className='salvar-botao'><Link className='texto' to='/exer5'>FUNÇÃO 5</Link></button>
+                        <button className='salvar-botao'><Link className='texto' to='/exer5'><p className='o'>FUNÇÃO 5</p></Link></button>
                     </div>
                     <div className='primeira'>
-                        <button className='salvar-botao'><Link className='texto' to='/exer6'>FUNÇÃO 6</Link></button>
+                        <button className='salvar-botao'><Link className='texto' to='/exer6'><p className='o'>FUNÇÃO 6</p></Link></button>
                     </div>
 
 
