@@ -1,4 +1,64 @@
-.principal{
+.container {
+    background-image: url('../../../public/images/nuvem-galaxia.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    label {
+        font-family: 'Medium';
+        color: white;
+        font-size: 2em;   
+    }
+}
+
+
+
+.principal{
+
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+.harry{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 85%;
+    background-color: rgb(11, 11, 11);
+    width: 15%;
+    border-radius: 1em;
+}
+
+
+
+.salvar-botao {
+    font-family:'Bold';
+    font-size: 1em;
+    background-color: #AE4EDB;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    width: 7em;
+    height: 2.5em;
+    border: none;
+    text-decoration: none;    
+}
+
+.salvar-botao:hover {
+    color:#AE4EDB;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.2s;
 }
