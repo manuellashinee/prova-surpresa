@@ -41,6 +41,10 @@ export default function Home() {
                         <button className='salvar-botao'><Link className='texto' to='/exer6'><p className='o'>FUNÇÃO 6</p></Link></button>
                     </div>
 
+                    <div className='primeira'>
+                        <button className='salvar-botao'><Link className='texto' to='/exer7'><p className='o'>FUNÇÃO 7</p></Link></button>
+                    </div>
+
 
                     
 
