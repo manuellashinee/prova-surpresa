@@ -7,37 +7,36 @@ export default function Orcamento() {
     const [situacao, setSituacao] = useState();
 
     function dinheiro (ganhos, gastos) {
-        let msg ='';
-        let bom  =  (ganhos/100) * 20;
-        let okay = (ganhos/100) * 50;
-        let atencao = (ganhos/100) * 80;
-        let ruim = (ganhos/100) *100;
+        let porcentagem = (gastos*100)/ganhos;
 
-        if (gastos <= bom) 
+        if (porcentagem >100) 
         {
-            msg = 'Parabéns, está gerenciando bem seu orçamento!';
+           setSituacao('Orçamento comprometido! Hora de rever seus gastos!');
         }
 
-        if (gastos <= okay && gastos > bom) 
+        else if(porcentagem > 80) 
         {
-            msg = 'Muito bem, seus gastos não ultarpassam metade dos ganhos!';
+            setSituacao('Cuidado, seu orçamento pode ficar comprometido!');
         }
 
-        if (gastos <= atencao && gastos > okay) 
+        else if (porcentagem  > 50) 
         {
-            msg = 'Atenção, melhor conter os gastos!';
+            setSituacao('Atenção, melhor conter os gastos!');
         }
 
-        if (gastos <= ruim) 
+        else if(porcentagem > 20) 
         {
-            msg = 'Cuidado, seu orçamento pode ficar comprometido!';
+            setSituacao('Muito bem, seus gastos não ultarpassam metade dos ganhos!');
         }
 
+        else if(porcentagem >= 0) {
+            setSituacao( 'Parabéns, está gerenciando bem seu orçamento!');
+        }
         else {
-            msg = 'Orçamento comprometido! Hora de rever seus gastos!'
+            setSituacao('entrada invalida')
         }
 
-        setSituacao(msg);
+      
     }
     useEffect( () => {
         dinheiro(ganhos,gastos);

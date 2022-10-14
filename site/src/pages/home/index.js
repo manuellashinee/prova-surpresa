@@ -44,6 +44,9 @@ export default function Home() {
                     <div className='primeira'>
                         <button className='salvar-botao'><Link className='texto' to='/exer7'><p className='o'>FUNÇÃO 7</p></Link></button>
                     </div>
+                    <div className='primeira'>
+                        <button className='salvar-botao'><Link className='texto' to='/exer8'><p className='o'>FUNÇÃO 8</p></Link></button>
+                    </div>
 
 
                     

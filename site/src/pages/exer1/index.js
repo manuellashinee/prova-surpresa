@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './index.scss'
 import '../../common/common.scss'
 
@@ -21,10 +21,7 @@ const [ final, setFinal] = useState();
 
   }
   
-    useEffect(() => {
-      custo();
-    
-    }, [final])
+   
   
   return (
    
