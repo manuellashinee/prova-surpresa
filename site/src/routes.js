@@ -8,6 +8,9 @@ import Temperatura from './pages/exer6';
 import Gasolina from './pages/exer5';
 import Orcamento from './pages/exer7';
 import Ingressos from './pages/exer8';
+import Naturais from './pages/exer9';
+import Linha from './pages/exer10';
+import Retangulo from './pages/exer11';
 
 export default function Rotas (){
   return(
@@ -23,6 +26,9 @@ export default function Rotas (){
       <Route path='/exer6' element={<Temperatura/>}/>
       <Route path='/exer7' element={<Orcamento/>}/> 
       <Route path='/exer8' element={<Ingressos/>}/> 
+      <Route path='/exer9' element={<Naturais/>}/> 
+      <Route path='/exer10' element={<Linha/>}/> 
+      <Route path='/exer11' element={<Retangulo/>}/>
   </Routes>
   </BrowserRouter>
   );

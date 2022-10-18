@@ -1,4 +1,4 @@
-.container {
+body {
     background-image: url('../../../public/images/nuvem-galaxia.webp');
     background-repeat: no-repeat;
     background-size: cover;
@@ -41,9 +41,19 @@
     border-radius: 1em;
 }
 
+h1{
+    color: white;
+}
 
+p{
+    color: white;
+}
 
-.salvar-botao {
+.a {
+    color: white;
+}
+
+button {
     font-family:'Bold';
     font-size: 1em;
     background-color: #AE4EDB;
@@ -62,6 +72,7 @@
 Link {
     text-decoration: none;
 }
+
 
 .o:hover {
     color: #000;

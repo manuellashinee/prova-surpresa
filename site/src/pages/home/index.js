@@ -21,32 +21,34 @@ export default function Home() {
             
             <div className='principal'>
                 <div className='harry'>
-                    <div className='primeira'>
+                    
                         <button className='salvar-botao'><Link className='texto' to='/exer1'><p className='o'>FUNÇÃO 1</p></Link></button>
-                    </div>
+                    
 
-                    <div className='primeira'>
+                    
                         <button className='salvar-botao'><Link className='texto' to='/exer2'><p className='o'>FUNÇÃO 2</p></Link></button>
-                    </div>
-                    <div className='primeira'>
+                    
+                  
                         <button className='salvar-botao'><Link className='texto' to='/exer3'><p className='o'>FUNÇÃO 3</p></Link></button>
-                    </div>
-                    <div className='primeira'>
-                        <button className='salvar-botao'><Link className='texto' to='/exer4'><p className='o'>FUNÇÃO 4</p></Link></button>
-                    </div>
-                    <div className='primeira'>
-                        <button className='salvar-botao'><Link className='texto' to='/exer5'><p className='o'>FUNÇÃO 5</p></Link></button>
-                    </div>
-                    <div className='primeira'>
-                        <button className='salvar-botao'><Link className='texto' to='/exer6'><p className='o'>FUNÇÃO 6</p></Link></button>
-                    </div>
 
-                    <div className='primeira'>
+                        <button className='salvar-botao'><Link className='texto' to='/exer4'><p className='o'>FUNÇÃO 4</p></Link></button>
+
+                        <button className='salvar-botao'><Link className='texto' to='/exer5'><p className='o'>FUNÇÃO 5</p></Link></button>
+
+                        <button className='salvar-botao'><Link className='texto' to='/exer6'><p className='o'>FUNÇÃO 6</p></Link></button>
+
                         <button className='salvar-botao'><Link className='texto' to='/exer7'><p className='o'>FUNÇÃO 7</p></Link></button>
-                    </div>
-                    <div className='primeira'>
+
                         <button className='salvar-botao'><Link className='texto' to='/exer8'><p className='o'>FUNÇÃO 8</p></Link></button>
-                    </div>
+
+                        <button className='salvar-botao'><Link className='texto' to='/exer9'><p className='o'>FUNÇÃO 9</p></Link></button>
+                    
+                    
+                        <button className='salvar-botao'><Link className='texto' to='/exer10'><p className='o'>FUNÇÃO 10</p></Link></button>
+
+                        <button className='salvar-botao'><Link className='texto' to='/exer11'><p className='o'>FUNÇÃO 11</p></Link></button>
+
+
 
 
                     
