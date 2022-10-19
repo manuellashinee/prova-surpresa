@@ -11,6 +11,7 @@ import Ingressos from './pages/exer8';
 import Naturais from './pages/exer9';
 import Linha from './pages/exer10';
 import Retangulo from './pages/exer11';
+import Beber from './pages/exer12';
 
 export default function Rotas (){
   return(
@@ -29,6 +30,7 @@ export default function Rotas (){
       <Route path='/exer9' element={<Naturais/>}/> 
       <Route path='/exer10' element={<Linha/>}/> 
       <Route path='/exer11' element={<Retangulo/>}/>
+      <Route path='/exer12' element={<Beber/>}/>
   </Routes>
   </BrowserRouter>
   );
