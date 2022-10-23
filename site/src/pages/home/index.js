@@ -49,6 +49,7 @@ export default function Home() {
                         <button className='salvar-botao'><Link className='texto' to='/exer11'><p className='o'>FUNÇÃO 11</p></Link></button>
                         
                         <button className='salvar-botao'><Link className='texto' to='/exer12'><p className='o'>FUNÇÃO 12</p></Link></button>
+                        <button className='salvar-botao'><Link className='texto' to='/exer13'><p className='o'>FUNÇÃO 13</p></Link></button>
 
 
 
