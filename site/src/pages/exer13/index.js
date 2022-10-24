@@ -21,14 +21,14 @@ const sim = (index) => {
   return `${row}-${col}`;
 };
 
-const getLabel = (value) => {
+const joguinho = (value) => {
   if (!value) {
     return null;
   }
   return value > 0 ? 'O' : 'X';
 };
 
-function getVencedor(v) {
+function vence(v) {
   for (let r = 0; r < 3; r++) {
     for (let c = 0; c < 3; c++) {
       const linha =
@@ -86,7 +86,7 @@ const Jogo = () => {
     };
     setValues(novosValores);
     setPlayer(player * -1);
-    const novoVencedor = getVencedor(novosValores);
+    const novoVencedor = vence(novosValores);
 
     if (novoVencedor) {
       setVencedor(novoVencedor > 0 ? 1 : -1);
@@ -105,7 +105,7 @@ const Jogo = () => {
 
   return (
     <div >
-        <h1>JOGO DA VELHA</h1>
+        <h1>JOGUINHO DA VELHA</h1>
       <div >
         {Array.from({ length: 9 }).map((_, index) => {
           const key = sim(index);
@@ -115,7 +115,7 @@ const Jogo = () => {
 
               onClick={() => handleClick(key)}
             >
-              {getLabel(values[key])}
+              {joguinho(values[key])}
             </button>
           );
         })}
@@ -123,9 +123,9 @@ const Jogo = () => {
       {(Vencedor || Empate) && (
         <div >
           {Vencedor ? (
-            <p >O ganhador é: {Vencedor > 0 ? 'O' : 'X'}</p>
+            <p >O Vencedor é : {Vencedor > 0 ? 'O' : 'X'}</p>
           ) : (
-            <p >Houve um empate</p>
+            <p >ocorreu um empate</p>
           )}
           <button onClick={resetar}>Reiniciar</button>
         </div>
