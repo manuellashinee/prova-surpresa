@@ -104,13 +104,15 @@ const Jogo = () => {
     !Vencedor;
 
   return (
-    <div >
-        <h1>JOGUINHO DA VELHA</h1>
-      <div >
+  
+    <div className='jogo'>
+        <div className='tentativa'>
+          <h1>JOGO DA VELHA</h1>
+      <div className='veia'>
         {Array.from({ length: 9 }).map((_, index) => {
           const key = sim(index);
           return (
-            <button 
+            <button className='aa'
               key={index}
 
               onClick={() => handleClick(key)}
@@ -120,8 +122,9 @@ const Jogo = () => {
           );
         })}
       </div>
+      </div>
       {(Vencedor || Empate) && (
-        <div >
+        <div className='decisao'>
           {Vencedor ? (
             <p >O Vencedor é : {Vencedor > 0 ? 'O' : 'X'}</p>
           ) : (
