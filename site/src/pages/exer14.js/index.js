@@ -1,50 +1,63 @@
 import { useState } from "react";
+import './index.scss'
+import { calcMedia, calcMaior, calcMenor, criarArray } from '../../services/media.js'
 
 export default function Media() {
 
-    const [alunos, setAlunos] = useState([]);
-    const [input, setInput] = useState([]);
-    const [resultado, setResultado] = useState([]);
-
-
-    function AparecerInput(input) {
-       
-        let arr= [];
-
-        for(let i = 1; i <= input; i++){
-            arr=[...arr, i]
-            setResultado(arr);
-        }
+    const [qtd, setQtd] = useState(0);
+    const [notasAlunos, setNotasAlunos] = useState([])
+  
+    const [media, setMedia] = useState(0);
+    const [maior, setMaior] = useState(0);
+    const [menor, setMenor] = useState(0);
+  
+  
+    function ok() {
+      const x = criarArray(qtd);
+      setNotasAlunos(x);
     }
-        function Mostrarresul(){
-            AparecerInput(input)
-        }
-
-    
-
+  
+    function alterarArray(pos, novoValor) {
+      notasAlunos[pos] = Number(novoValor);
+      setNotasAlunos([...notasAlunos]);
+    }
+  
+    function calcular() {
+      const a = calcMedia(notasAlunos);
+      const b = calcMaior(notasAlunos);
+      const c = calcMenor(notasAlunos);
+  
+      setMedia(a);
+      setMaior(b);
+      setMenor(c);
+    }
     return(
         <section>
             <h1>Exercício 14</h1>
-
             <div>
-                <input type='number' value={input} onChange={e  =>setInput (e.target.value)}/>
-                
-                <button onClick={Mostrarresul}>Mostrar</button>
-                <div>
-                    {resultado.map((item) => (
-                        <div>
-                        <p>Aluno {item}</p><input type='number'></input>
-                        </div>
-                    ))}
-                </div>
-             
-                </div>
-                
+          Qtd. Alunos: <input type='text' value={qtd} onChange={e => setQtd(e.target.value)} />
+          <button onClick={ok}> Aparecer </button>
+        </div>
+
+        {notasAlunos.map((item, pos) => 
+          <div className="aluno">
+            Aluno {pos+1}: <input type='text' value={notasAlunos[pos]} onChange={e => alterarArray(pos, e.target.value)} />
+          </div>  
+        )}
 
 
-             
-              
-                
+        <button onClick={calcular}> Calcular </button>
+        
+        <div className="media">
+          Média: {media}
+        </div>
+        <div className="maior">
+          Maior: {maior}
+        </div>
+        <div className="menor">
+          Menor: {menor}
+        </div>
+        
         
         </section>
     )
